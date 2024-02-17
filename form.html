@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form with Dinosaur Background</title>
+  <style>
+    /* ... Your existing styles here ... */
+  </style>
+</head>
+<body>
+  <div class="dinosaur" style="left: 50px;">🦕</div>
+  <div class="dinosaur" style="left: 100px;">🦖</div>
+  <!-- Add more dinosaur elements with different positions -->
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm" action="https://formspree.io/f/KF3rnxy100" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      // You can add client-side validation here if needed
+      alert('Form submitted successfully!');
+    });
+  </script>
+</body>
+</html>
