@@ -10,8 +10,8 @@ int footstepCount = 0;
 float voltage = 0.0;
 
 void setup() {
-  lcd.init();                      // Initialize the LCD
-  lcd.backlight();                 // Turn on the backlight
+  lcd.init();         // Initialize the LCD
+  lcd.backlight();  // Turn on the backlight
   lcd.setCursor(0, 0);
   lcd.print("Voltage: ");
   lcd.setCursor(0, 1);
