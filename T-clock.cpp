@@ -82,7 +82,7 @@ if(buttonforhour == HIGH){
 h++;
 lcd.setCursor(5,1);
 lcd.print(h);
-if(h)23){
+if(h>23){
 h=0;
 lcd.clear();}
 delay(100);
@@ -92,7 +92,7 @@ if(buttonformin == HIGH){
 m++;
 lcd.setCursor(13,1);
 lcd.print(m);
-if(m)59){
+if(m>59){
 m=0;
 lcd.clear();}
 delay(100);
