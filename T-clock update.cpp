@@ -24,7 +24,7 @@ void setup() {
   pinMode(pexit, INPUT);
   pinMode(buzzer, OUTPUT); // Itinakda ang mga pin bilang input o output
   
-  lcd.begin(); // Inisyalisasyon ng LCD
+  lcd.begin(16, 2); // Inisyalisasyon ng LCD
   rtc.halt(false); // Binuksan ang RTC
   rtc.writeProtect(false); // Tinanggal ang write protection ng RTC
 
