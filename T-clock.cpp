@@ -39,6 +39,9 @@ lcd.begin();
 //rtc.setDOW(MONDAY);// Set Day-of-week to Friday
 //rtc.setTime(12, 59, 50);//Set the time to 12:00:00(24hr ni shag format ehe)
 //rtc.setDate(11,11,2024); //Set the date to  August 6th, 2010 
+
+
+setTimeFromSystem(); // Set RTC time from system time
 }
 
 void loop()
