@@ -44,6 +44,15 @@ lcd.begin();
 setTimeFromSystem(); // Set RTC time from system time
 }
 
+
+void setTimeFromSystem() {
+  int currentHour = hour();
+  int currentMinute = minute();
+  int currentSecond = second();
+
+  rtc.setTime(currentHour, currentMinute, currentSecond);
+}
+
 void loop()
 {
 
