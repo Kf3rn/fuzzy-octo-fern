@@ -43,6 +43,9 @@ lcd.begin();
 
 void loop()
 {
+
+DateTime now = rtc.now(); // Get current time from RTC
+
 if(activate == 0) {
 
 //Display time on the right corner upper line
